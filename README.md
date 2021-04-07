@@ -1,7 +1,7 @@
-# Carnegie Project
-## [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+# Readme File Generator
+## [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Description 
-Description
+Automatically generates a readme file based on user input.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -14,16 +14,20 @@ To install the necessary dependencies run:
 ```
 npm i
 ```
-Installation
+Install npm i
 ## Usage
-Enter node index.js
+```
+Run node index.js from the bash command line.
+```
 ### Screenshot
-./screenshot
+```md
+![README Generator Screenshot](./screenshot.png)
+```
 ## License
-This project is licensed through: MIT
+This project is licensed through: APACHE_2.0
 ## Contributing
-Coleen
+Coleen Stuhlfire
 ## Tests
-Run node index.js from bash command line.
+Enter node index.js to test.
 ## Questions
 If you have questions about the repo, open an issue or contact me at cstuhlfire@gmail.com. You can find this project along with my other work at https://github.com/cstuhlfire.

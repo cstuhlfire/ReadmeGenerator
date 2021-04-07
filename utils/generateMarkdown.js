@@ -53,7 +53,9 @@ ${data.install}
 ${data.usage}
 \`\`\`
 ### Screenshot
-${data.filepath}
+\`\`\`md
+![README Generator Screenshot](${data.filepath})
+\`\`\`
 ## License
 This project is licensed through: ${data.license}
 ## Contributing
