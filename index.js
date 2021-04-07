@@ -1,13 +1,78 @@
-// TODO: Include packages needed for this application
+// Readme Generator
 
-// TODO: Create an array of questions for user input
-const questions = [];
+// Include packages needed for this application
+const inquirer = require("inquirer");
+const fs = require("fs");
+const gen = require("./utils/generateMarkdown");
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
+// Create an array of questions for user input
+// const questions = [];
 
 // Function call to initialize app
 init();
+
+// Initialize app
+function init() {
+  promptUsers();
+}
+
+// Function definitions
+function promptUsers() {
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "title",
+        message: "Enter the title of your project: ",
+      },
+      {
+        type: "input",
+        name: "description",
+        message: "Enter the description of your project: ",
+      },
+      {
+        type: "input",
+        name: "install",
+        message: "Enter the installation instructions: ",
+      },
+      {
+        type: "input",
+        name: "usage",
+        message: "Enter instructions and examples for usage: ",
+      },
+      {
+        type: "input",
+        name: "filepath",
+        message: "Enter the path to the screenshot: ",
+      },
+      {
+        type: "input",
+        name: "contributers",
+        message: "Enter a list of contributers: ",
+      },
+      {
+        type: "input",
+        name: "test",
+        message: "Enter test instructions: ",
+      },
+      {
+        type: "list",
+        message: "Choose a license: ",
+        name: "license",
+        choices: ["list1", "list2", "list3"],
+      },
+    ])
+    .then((data) => {
+      let fileString = gen.generateMarkdown(data);
+      writeToFile(fileString);
+    });
+}
+
+// Write file
+function writeToFile(fileString) {
+  const fileName = "README.md";
+
+  fs.writeFile(fileName, fileString, (err) =>
+    err ? console.log(err) : console.log("Success!")
+  );
+}
