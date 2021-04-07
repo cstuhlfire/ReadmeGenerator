@@ -30,6 +30,8 @@ function renderLicenseSection(license) {
 // Generate markdown text
 function generateMarkdown(data) {
   let licenseBadge = renderLicenseSection(data.license);
+  let screenGrab = "![Screenshot]("+data.filepath+")";
+  console.log(screenGrab);
 
   let fileString = `# ${data.title}
 ## ${licenseBadge}
@@ -53,17 +55,23 @@ ${data.install}
 ${data.usage}
 \`\`\`
 ### Screenshot
-\`\`\`md
-![README Generator Screenshot](${data.filepath})
-\`\`\`
+![Screenshot](${data.filepath})
 ## License
+\`\`\`
 This project is licensed through: ${data.license}
+\`\`\`
 ## Contributing
+\`\`\`
 ${data.contributers}
+\`\`\`
 ## Tests
+\`\`\`
 ${data.test}
+\`\`\`
 ## Questions
-If you have questions about the repo, open an issue or contact me at ${data.email}. You can find this project along with my other work at https://github.com/${data.github}.`;
+\`\`\`
+If you have questions about the repo, open an issue or contact me at ${data.email}. You can find this project along with my other work at https://github.com/${data.github}.
+\`\`\``;
 
   return fileString;
 }

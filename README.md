@@ -1,7 +1,7 @@
-# Readme File Generator
-## [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# lskdjfskjf
+## [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ## Description 
-Automatically generates a readme file based on user input.
+slkdjflsjf
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -14,20 +14,26 @@ To install the necessary dependencies run:
 ```
 npm i
 ```
-Install npm i
+slkdjfklsjdf
 ## Usage
 ```
-Run node index.js from the bash command line.
+lsdkjflksj
 ```
 ### Screenshot
-```md
-![README Generator Screenshot](./screenshot.png)
-```
+![Screenshot](./screenshot.PNG)
 ## License
-This project is licensed through: APACHE_2.0
+```
+This project is licensed through: MIT
+```
 ## Contributing
-Coleen Stuhlfire
+```
+slkdfjsl
+```
 ## Tests
-Enter node index.js to test.
+```
+slkdjfsljdf
+```
 ## Questions
-If you have questions about the repo, open an issue or contact me at cstuhlfire@gmail.com. You can find this project along with my other work at https://github.com/cstuhlfire.
+```
+If you have questions about the repo, open an issue or contact me at lsdkjf. You can find this project along with my other work at https://github.com/lskdjf.
+```
