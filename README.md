@@ -1,7 +1,7 @@
-# New Project
-## [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+# Carnegie Project
+## [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ## Description 
-Describe
+Description
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -10,14 +10,20 @@ Describe
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-Install dependencies with npm i
+To install the necessary dependencies run:
+```
+npm i
+```
+Installation
 ## Usage
-Answer prompts with details to be written to the readme file
+Enter node index.js
 ### Screenshot
-## License
-BSD_3
 ./screenshot
+## License
+This project is licensed through: MIT
 ## Contributing
-Coleen Stuhlfire
+Coleen
 ## Tests
-Answer prompts and generate readme file with different badges
+Run node index.js from bash command line.
+## Questions
+If you have questions about the repo, open an issue or contact me at cstuhlfire@gmail.com. You can find this project along with my other work at https://github.com/cstuhlfire.

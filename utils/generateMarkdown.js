@@ -43,9 +43,15 @@ ${data.description}
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
+To install the necessary dependencies run:
+\`\`\`
+npm i
+\`\`\`
 ${data.install}
 ## Usage
+\`\`\`
 ${data.usage}
+\`\`\`
 ### Screenshot
 ${data.filepath}
 ## License
@@ -54,7 +60,8 @@ This project is licensed through: ${data.license}
 ${data.contributers}
 ## Tests
 ${data.test}
-## Questions`;
+## Questions
+If you have questions about the repo, open an issue or contact me at ${data.email}. You can find this project along with my other work at https://github.com/${data.github}.`;
 
   return fileString;
 }

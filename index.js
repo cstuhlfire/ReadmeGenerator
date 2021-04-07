@@ -57,9 +57,19 @@ function promptUsers() {
       },
       {
         type: "list",
-        message: "Choose a license: ",
         name: "license",
+        message: "Choose a license: ",
         choices: licenseList,
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "Enter your email address: ",
+      },
+      {
+        type: "input",
+        message: "Enter your github username: ",
+        name: "github",
       },
     ])
     .then((data) => {
