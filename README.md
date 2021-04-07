@@ -1,21 +1,23 @@
-# Title
+# New Project
+## [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 ## Description 
-Description
+Describe
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [License](#license)
 - [Contributing](#contributing) 
 - [Tests](#tests)
-- [License](#license) 
+- [Questions](#questions)
 ## Installation
-Install
+Install dependencies with npm i
 ## Usage
-Use
+Answer prompts with details to be written to the readme file
 ### Screenshot
-./screen
-## Contributing
-Coleen, Julian, Nicole
-## Tests
-test
 ## License
-list3
+BSD_3
+./screenshot
+## Contributing
+Coleen Stuhlfire
+## Tests
+Answer prompts and generate readme file with different badges

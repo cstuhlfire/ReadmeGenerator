@@ -5,8 +5,8 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const gen = require("./utils/generateMarkdown");
 
-// Create an array of questions for user input
-// const questions = [];
+// Array of licenses for list choices
+const licenseList = ["MIT", "APACHE_2.0", "GPL_3.0", "BSD_3", "None"];
 
 // Function call to initialize app
 init();
@@ -59,7 +59,7 @@ function promptUsers() {
         type: "list",
         message: "Choose a license: ",
         name: "license",
-        choices: ["list1", "list2", "list3"],
+        choices: licenseList,
       },
     ])
     .then((data) => {
@@ -73,6 +73,6 @@ function writeToFile(fileString) {
   const fileName = "README.md";
 
   fs.writeFile(fileName, fileString, (err) =>
-    err ? console.log(err) : console.log("Success!")
+    err ? console.log(err) : console.log("Generating README.md...")
   );
 }

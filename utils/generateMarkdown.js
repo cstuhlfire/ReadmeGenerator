@@ -1,38 +1,62 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// Generate Markdown functions
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// Set licenseBadge based on user license choice
+function renderLicenseSection(license) {
+  let licenseBadge = "";
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+  switch (license) {
+    case 'MIT':
+      licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)";
+      break;
+    case 'APACHE_2.0':
+      licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+      break;
+    case 'GPL_3.0':
+      licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+      break;
+    case 'BSD_3':
+      licenseBadge = "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
+      break;
+    case "None":
+      licenseBadge = "";
+      break;
+    default:
+      licenseBadge = "";
+  }
 
-// TODO: Create a function to generate markdown for README
+  return licenseBadge;
+}
+
+// Generate markdown text
 function generateMarkdown(data) {
-  return `# ${data.title}
+  let licenseBadge = renderLicenseSection(data.license);
+
+  let fileString = `# ${data.title}
+## ${licenseBadge}
 ## Description 
 ${data.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [License](#license)
 - [Contributing](#contributing) 
 - [Tests](#tests)
-- [License](#license) 
+- [Questions](#questions)
 ## Installation
 ${data.install}
 ## Usage
 ${data.usage}
 ### Screenshot
 ${data.filepath}
+## License
+This project is licensed through: ${data.license}
 ## Contributing
 ${data.contributers}
 ## Tests
 ${data.test}
-## License
-${data.license}`;
+## Questions`;
+
+  return fileString;
 }
 
 module.exports = {generateMarkdown};
