@@ -1,7 +1,7 @@
-# lksdjfksljdf
+# README.md Generator
 ## [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description 
-slkdfjslkjdf
+This application automatically generates a README.md from user input.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -17,10 +17,10 @@ To install the necessary dependencies run:
 ```
 npm i
 ```
-slkdjflskjdf
+To install dependencies run "nmp i" from the bash command line.
 ## Usage
 ```
-skdjfsldjf
+To use the application run "node index.js" from the bash command line.
 ```
 ## Screenshot
 ![Screenshot](./screenshot.PNG)
@@ -32,18 +32,18 @@ This project is licensed through: GPL_3.0
 ```
 ## Contributing
 ```
-lskdjf
+Coleen Stuhlfire
 ```
 ## Tests
 ```
-lskdjf
+To test the application run "node index.js" from the bash command line. Answer the command line prompts. Then inspect the generated README.md file.
 ```
 ## Questions
 ```
 If you have questions about the repo, open an issue or contact me at 
-sldjfsdf. You can find this project along with my other work 
-at https://github.com/sldkfjslkjdf.
+cstuhlfire@gmail.com. You can find this project along with my other work 
+at https://github.com/cstuhlfire.
 ```
 #### Credit
-Lucas Himsel - license-badges.md 
+Lucas Himsel - license-badges.md - 
 https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
