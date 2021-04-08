@@ -30,9 +30,7 @@ function renderLicenseSection(license) {
 // Generate markdown text
 function generateMarkdown(data) {
   let licenseBadge = renderLicenseSection(data.license);
-  let screenGrab = "![Screenshot]("+data.filepath+")";
-  console.log(screenGrab);
-
+ 
   let fileString = `# ${data.title}
 ## ${licenseBadge}
 ## Description 
@@ -40,10 +38,13 @@ ${data.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
+- [Screenshot](#screenshot)
+- [Screencast](#screencast)
+- [License_Details](#license_details)
 - [Contributing](#contributing) 
 - [Tests](#tests)
 - [Questions](#questions)
+- [Credit](#Credit)
 ## Installation
 To install the necessary dependencies run:
 \`\`\`
@@ -54,9 +55,11 @@ ${data.install}
 \`\`\`
 ${data.usage}
 \`\`\`
-### Screenshot
+## Screenshot
 ![Screenshot](${data.filepath})
-## License
+## Screencast
+[Screencast Link](https://drive.google.com/file/d/1mhqe4WnObjpgtZxWwA_aonYFAieBGqPJ/view?usp=sharing)
+## License_Details
 \`\`\`
 This project is licensed through: ${data.license}
 \`\`\`
@@ -70,8 +73,14 @@ ${data.test}
 \`\`\`
 ## Questions
 \`\`\`
-If you have questions about the repo, open an issue or contact me at ${data.email}. You can find this project along with my other work at https://github.com/${data.github}.
-\`\`\``;
+If you have questions about the repo, open an issue or contact me at 
+${data.email}. You can find this project along with my other work 
+at https://github.com/${data.github}.
+\`\`\`
+#### Credit
+Lucas Himsel - license-badges.md - 
+https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+`;
 
   return fileString;
 }
