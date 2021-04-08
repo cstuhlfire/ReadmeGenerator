@@ -1,7 +1,7 @@
-# README.md Generator
+# Readme Generator
 ## [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description 
-This application automatically generates a README.md from user input.
+Readme Generator dynamically builds a readme.md file from user input.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -17,10 +17,10 @@ To install the necessary dependencies run:
 ```
 npm i
 ```
-To install dependencies run "nmp i" from the bash command line.
+To install dependencies run "node index.js" from the bash command line.
 ## Usage
 ```
-To use the application run "node index.js" from the bash command line.
+To use run "node index.js" from the bash command line.
 ```
 ## Screenshot
 ![Screenshot](./screenshot.PNG)
@@ -36,7 +36,7 @@ Coleen Stuhlfire
 ```
 ## Tests
 ```
-To test the application run "node index.js" from the bash command line. Answer the command line prompts. Then inspect the generated README.md file.
+To test run "node index.js" from the bash command line. Answer the command line prompts. Then inspect the readme.md file.
 ```
 ## Questions
 ```
